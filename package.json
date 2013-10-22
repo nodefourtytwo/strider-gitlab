@@ -24,8 +24,7 @@
     "type": "provider",
     "hosted": true,
     "config": true,
-    "accountConfig": {
-    },
+    "accountConfig": true,
     "webapp": "webapp.js",
     "worker": "worker.js",
     "inline_icon": "bitbucket"
@@ -42,6 +41,6 @@
     "lodash": "~2.2.0",
     "step": "0.0.5",
     "async": "~0.2.9",
-    "crypto": "0.0.3",
+    "crypto": "0.0.3"
   }
 }

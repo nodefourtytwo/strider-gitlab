@@ -25,6 +25,7 @@
     "hosted": true,
     "config": true,
     "accountConfig": {
+      "template": "config/accountConfig.html"
     },
     "webapp": "webapp.js",
     "worker": "worker.js",

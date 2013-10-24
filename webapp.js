@@ -10,7 +10,7 @@ module.exports = {
       var parsed = parser.parse(userConfig.api_url);
       data.forEach(function(repo){
         repo.org = parsed.hostname;
-        repo.display_url = parsed.protocol+'//'+parsed.hostname+'/';
+        repo.display_url = parsed.protocol+'//'+parsed.hostname+'/'+repo.name;
         repos.push(repo);
       })
       next(null, repos.map(api.parseRepo).filter(function(repo){

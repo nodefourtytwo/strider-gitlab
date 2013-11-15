@@ -23,7 +23,6 @@ module.exports = {
     var branch = project.branches[0].name;
     // GET /projects/:id/repository/blobs/branch?filepath=filename
     var req = "projects/"+id+"/repository/blobs/"+branch+"?filepath="+filename;
-    console.log(req);
     api.get(account.config,req, function(err,data){
       var content = "";
       if(!err && data !== undefined){
@@ -45,7 +44,6 @@ module.exports = {
           branches.push(branch.name);
         });
       }
-      console.log(branches);
       done(err, branches);
     });
   },

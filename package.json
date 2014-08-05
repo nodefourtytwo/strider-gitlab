@@ -15,7 +15,9 @@
     "gitlab",
     "strider"
   ],
-  "author": "Joel Dimbernat",
+  "author": {
+    "name": "Joel Dimbernat"
+  },
   "license": "MIT",
   "readmeFilename": "Readme.md",
   "strider": {
@@ -44,5 +46,15 @@
     "step": "0.0.5",
     "async": "~0.2.9",
     "crypto": "0.0.3"
-  }
+  },
+  "readme": "# Strider GitLab  provider\n\nThis module provides seamless integration between strider and gitlab.\n\nWhen you add a gitlab project into strider, in order to checkout your branch you need to put strider project public key in a gitlab user ssh keys.\n\nRequirements:\n  * Strider 1.4\n  * Gitlab 6.2\n",
+  "bugs": {
+    "url": "https://github.com/nodefourtytwo/strider-gitlab-provider/issues"
+  },
+  "_id": "strider-gitlab@0.0.0",
+  "dist": {
+    "shasum": "7a355fc72ad321ff8ece3ea114bcfac96b34fccd"
+  },
+  "_resolved": "git://github.com/nodefourtytwo/strider-gitlab.git#c871e85b947072732852fe9e8bdeea0d261c8668",
+  "_from": "strider-gitlab@git://github.com/nodefourtytwo/strider-gitlab.git"
 }

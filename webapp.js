@@ -35,11 +35,11 @@ module.exports = {
   getBranches: function(account, config, project, done) {
     var id = project.provider.repo_id;
     var req = "projects/"+id+"/repository/branches";
+    var branches = [];
     api.get(account, req, function(err, data){
       var content = "";
       if(!err && data !== undefined){
         content = JSON.parse(data);
-        var branches = [];
         content.forEach(function(branch){
           branches.push(branch.name);
         });
@@ -48,4 +48,4 @@ module.exports = {
     });
   },
 
-}
+};
